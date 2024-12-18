@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #EAF4FF 0%, #FFFFFF 100%);
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header-name {
+    font-size: 48px;
+    font-family: 'Lilita One', cursive;
+    color: #333;
+}
+
+.navbar-text a {
+    color: #4A4E69;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.content-area1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.lilita {
+    display: inline-block;
+    font-family: 'Lilita One', cursive;
+    font-weight: bold;
+    color: #FFF;
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.lilita-one-regular {
+    background-color: #4B77FF;
+    font-size: 56px;
+}
+
+.lilita-two-regular {
+    background-color: #FF9EBB;
+    font-size: 48px;
+}
+
+.lilita-three-regular {
+    background-color: #C084FC;
+    font-size: 42px;
+}
+
+p {
+    color: #4A4E69;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.lilita {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.skills-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #F9FAFC;
+}
+
+.skills-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background-color: #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4A4E69;
+    margin: 0;
+}
