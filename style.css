@@ -264,41 +264,7 @@ header {
     color: #333;
 }
 
-.portfolio {
-    background-color: #f5f0ff;
-    padding: 50px 20px;
-    text-align: center;
-}
 
-.portfolio-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-}
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.portfolio-item {
-    background-color: #ddd;
-    height: 150px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.portfolio-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.portfolio-item.wide {
-    grid-column: span 2;
-}
 
 .learn {
     background-color: #ffffff;
@@ -387,7 +353,7 @@ header {
 }
 
 .blog-excerpt {
-    font-size: 0.95rem;
+    font-size: 0.55rem;
     color: #555;
     margin-bottom: 15px;
 }
