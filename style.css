@@ -206,6 +206,54 @@ header {
     }
 }
 
+  .skills-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .skills-header h2 {
+    font-size: 28px;
+    color: #2d0033;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .skill-card img {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .skill-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2d0033;
+  }
+  
+  .skill-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
 .skills {
     margin: 60px auto;
     padding: 20px;
@@ -264,43 +312,75 @@ header {
     color: #333;
 }
 
-
-
 .learn {
     background-color: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.learn-title {
-    font-size: 1.8rem;
+    padding: 80px 20px;
+  }
+  
+  .learn-title {
+    font-size: 2.2rem;
     font-weight: bold;
-    margin-bottom: 40px;
-}
-
-.learn-grid {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #2d0033; /* ม่วงเข้ม */
+    position: relative;
+  }
+  
+  .learn-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #a855f7; /* เส้นคั่นม่วงสด */
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .learn-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
     margin: 0 auto;
-}
-
-.learn-item {
-    background-color: #ddd;
-    height: 150px;
-    border-radius: 10px;
+  }
+  
+  .learn-item {
+    background: linear-gradient(135deg, #f5f0ff, #e0d4ff);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.learn-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.learn-item.wide {
+    text-align: left;
+  }
+  
+  .learn-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #2d0033;
+  }
+  
+  .learn-item p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #3f3f46; /* เทาอ่านง่าย */
+  }
+  
+  .learn-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .learn-item.wide {
     grid-column: span 2;
-}
+  }
+  
+  /* Responsive: ปิด span 2 ตอนจอเล็ก */
+  @media (max-width: 768px) {
+    .learn-item.wide {
+      grid-column: span 1;
+    }
+  }
+  
 
 .blog-section {
     background-color: #f5f0ff;
